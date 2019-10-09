@@ -194,5 +194,5 @@ def user_main(args, exit_code=False):
     return errcode
 
 
-if __name__ == "__main__":
+def entry_point_main():
     user_main(sys.argv[1:], exit_code=True)

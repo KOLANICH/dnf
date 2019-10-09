@@ -21,6 +21,7 @@
 from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import unicode_literals
+import sys
 from dnf.i18n import _, ucd
 import dnf
 import dnf.automatic.emitter
@@ -271,6 +272,9 @@ def main(args):
         logger.error(_('Error: %s'), ucd(exc))
         return 1
     return 0
+
+def entry_point_main():
+    sys.exit(main(sys.argv[1:]))
 
 
 def upgrade(base, upgrade_type):

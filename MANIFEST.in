@@ -1,0 +1,3 @@
+include COPYING AUTHORS PACKAGE-LICENSING
+global-include *.rst
+global-exclude *.cmake CMakeLists.txt

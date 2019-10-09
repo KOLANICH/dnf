@@ -7,6 +7,8 @@ asthelper.completions
 .emacs.desktop*
 TAGS
 build/
+*.egg-info/
+dist/
 package/dnf.spec
 dnf/const.py
 bin/dnf*-2
